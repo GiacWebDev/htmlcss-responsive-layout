@@ -69,7 +69,6 @@ main .planning .row {
 main .planning .row .left,
 main .planning .row .right {
   margin: auto;
-  width: 90%;
   height: 50%;
   justify-content: center;
 }
@@ -87,7 +86,6 @@ main .testimonials .card {
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 90%;
   background-color: #9792E4;
   margin: 30px auto;
 }
@@ -104,7 +102,6 @@ main .benefits {
 main .benefits .card {
   display: flex;
   justify-content: center;
-  width: 90%;
   margin: 30px auto;
   background-color: white;
 }
@@ -114,17 +111,18 @@ main .benefits .card {
 main .about-us {
   padding: 40px 0;
   text-align: center;
-  height: 200px;
 }
 
 /* ------------------------- FOOTER ------------------------- */
 
 footer .top {
+  padding: 40px 0;
   text-align: center;
   background-color: #9792E4;
 }
 
 footer .bottom {
+  padding: 20px 0;
   text-align: center;
   background-color: #333333;
 }
