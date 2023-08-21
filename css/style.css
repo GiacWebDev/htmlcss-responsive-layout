@@ -5,7 +5,7 @@
 }
 
 .container {
-  width: 100%;
+  width: 90%;
   max-width: 576px;
   margin: auto;
 }
@@ -18,7 +18,7 @@
   background-color: greenyellow;
 }
 
-------------------------- HEADER -------------------------
+/* ------------------------- HEADER ------------------------- */
 
 header {
   width: 100%;
@@ -36,15 +36,61 @@ header .box .right{
   height: 75px;
 }
 
-------------------------- HERO -------------------------
+/* ------------------------- HERO ------------------------- */
+
+main {
+  margin: auto;
+}
 
 main .hero {
   display: flex;
+  flex-direction: column;
 }
 
 main .hero .card {
   min-width: 100%;
-  height: 500px;
+  height: 300px;
   margin: 20px auto;
   background-color: aliceblue;
+}
+
+/* ------------------------- PLANNING ------------------------- */
+
+main .planning {
+  height: 200px;
+  background-color: #9792E4;
+}
+
+main .planning .left,
+main .planning .right {
+  height: 50%;
+  justify-content: center;
+}
+
+
+/* ------------------------- TESTIMONIALS ------------------------- */
+
+main .testimonials {
+  text-align: center;
+  padding: 20px 0;
+}
+
+main .testimonials .card {
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  background-color: #9792E4;
+  margin: 30px 0;
+}
+
+
+/* ------------------------- BENEFITS ------------------------- */
+
+main .benefits {
+  text-align: center;
+  background-color: #9792E4;
+}
+
+main .benefits .card {
+  background-color: white;
 }
