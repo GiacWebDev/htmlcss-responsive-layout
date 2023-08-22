@@ -5,8 +5,7 @@
 }
 
 .container {
-  width: 90%;
-  max-width: 576px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -16,6 +15,7 @@
 
 .debug {
   background-color: greenyellow;
+  border: 1px solid black;
 }
 
 /* ------------------------- HEADER ------------------------- */
@@ -42,21 +42,25 @@ header .box .right{
 
 /* ------------------------- HERO ------------------------- */
 
-main {
-  margin: auto;
-}
-
 main .hero {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   margin-top: 75px;
+  width: 100%;
+}
+
+main .hero .row {
+  display: flex;
   flex-direction: column;
 }
 
 main .hero .card {
-  min-width: 100%;
+  display: flex;
   height: 300px;
+  width: 100%;
   margin: 20px auto;
-  background-color: aliceblue;
+  background-color: #B5DDFF;
 }
 
 /* ------------------------- PLANNING ------------------------- */
@@ -84,8 +88,8 @@ main .testimonials {
 
 main .testimonials .card {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  text-align: center;
   background-color: #9792E4;
   margin: 30px auto;
 }
@@ -125,4 +129,61 @@ footer .bottom {
   padding: 20px 0;
   text-align: center;
   background-color: #333333;
+}
+
+
+/* ------------------------- MEDIA SCREEN ------------------------- */
+
+@media screen and (min-width: 577px) {
+  .container {
+    width: 90%;
+    max-width: 1199px;
+  }
+
+  main .hero {
+    margin-top: 75px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  main .hero .card {
+    display: flex;
+    height: 200px;
+    background-color: #B5DDFF;
+  }
+
+  main .testimonials .row .card {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    text-align: start;
+    align-items: center;
+  }
+
+  main .testimonials .row .card .avatar {
+    width: 40%;
+  }
+
+  main .testimonials .row .card .text {
+    width: 60%;
+  }
+
+  main .benefits {
+    background-color: #9792E4;
+    padding: 40px 0;
+  }
+
+  main .benefits .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  main .benefits .card {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    background-color: white;
+  }
 }
