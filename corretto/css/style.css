@@ -188,6 +188,9 @@ main .planning .row .col .card .icon {
 }
 
 /* TESTIMONIALS */
+
+/* TOP */
+
 main .testimonials .top {
   text-align: center;
 }
@@ -206,6 +209,46 @@ main .testimonials .top p {
   margin-bottom: 10px;
 }
 
+/* CARDS */
+
+
+main .testimonials .cards {
+  padding: 20px;
+}
+
+main .testimonials .card:nth-child(2) {
+  margin: 20px 0px;
+}
+
+main .testimonials .card {
+  text-align: center;
+  padding: 30px;
+  border-radius: 40px;
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+main .testimonials .card .right {
+  display: flex;
+  align-items: center;
+}
+
+main .testimonials img {
+  margin-bottom: 15px;
+  border-radius: 50%;
+  object-fit: cover;
+  height: 200px;
+  width: 200px;
+}
+
+main .testimonials span {
+  font-size: 1.2rem;
+}
+
+main .testimonials h4 {
+  font-size: 1.4rem;
+  margin-top: 15px;
+}
 
 
 
@@ -286,6 +329,7 @@ main .testimonials .top p {
     main .intro .col .row .right {
       display: flex;
       justify-content: start;
+      margin-left: 70px;
     }
 
     /* PLANNING */
@@ -302,8 +346,17 @@ main .testimonials .top p {
         flex-direction: row;
     }
 
+    /* TESTIMONIALS */
+
     .testimonials .row .col:first-child{
         width: 220px;
+    }
+
+    main .testimonials .card .right {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-left: 70px;
     }
 
     .benefits .col{
@@ -315,6 +368,9 @@ main .testimonials .top p {
     }
 
 }
+
+
+
 
 @media screen and (min-width:992px){
     .intro .col:first-child .row{
