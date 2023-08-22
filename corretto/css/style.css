@@ -345,6 +345,75 @@ main .testimonials h4 {
   background-color: var(--secondary-color);
 }
 
+/* GET STARTED */
+
+.getstarted {
+  padding: 20px 0;
+  background-color: var(--secondary-color);
+}
+
+.getstarted .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.getstarted h2, h3, h4, p {
+  margin: 20px 0;
+}
+
+.getstarted h4 {
+  color: white;
+}
+
+.getstarted h3 {
+  font-size: 2rem;
+  color: white;
+}
+
+.getstarted h2 {
+  font-size: 6rem;
+  color: #FDC160;
+}
+
+.getstarted p {
+  max-width: 500px;
+  color: white;
+}
+
+.getstarted .button {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  border-radius: 50px;
+  padding: 15px 30px;
+  width: fit-content;
+  background-color: white;
+  color: var(--secondary-color);
+}
+
+/* FOOTER */
+
+footer {
+  padding: 20px 0;
+  background-color: #333333;
+}
+
+footer .container {
+  color: white;
+  text-align: center;
+  max-width: 500px;
+}
+
+footer .container p {
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+
+footer .container a {
+  color: var(--secondary-color);
+}
+
 
 /* RESPONSIVE AREA */
 
