@@ -27,6 +27,10 @@ body {
     width: 100%;
 }
 
+.b-radius {
+  border-radius: 20px;
+}
+
 :root {
   --primary-color: #0084FD;
   --secondary-color: #9792E4;
@@ -34,11 +38,15 @@ body {
 
 /* HEADER */
 
+header {
+  background-color: var(--primary-color);
+  width: 100%;
+}
+
 header .row {
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  background-color: var(--primary-color);
 }
 
 header .row .col {
@@ -50,8 +58,7 @@ header .row .col:last-child {
   justify-content: end;
 }
 
-header .row .menu,
-header .row .cta {
+header .row .menu {
     display: none;
 }
 
@@ -60,8 +67,20 @@ header .row .col .hamburger i {
 }
 
 /* MAIN */
+
+/* INTRO */
+
 .intro .row{
     flex-wrap: wrap;
+}
+
+
+.intro,
+.planning,
+.testimonials,
+.benefits,
+.about {
+  padding: 30px 0px;
 }
 
 .intro .col:first-child .row,
@@ -73,18 +92,18 @@ header .row .col .hamburger i {
     flex-direction: column;
 }
 
-.benefits .row{
-    flex-wrap: wrap;
-}
-
-main .intro .col .row {
+main .intro .col {
   padding: 10px 20px 0px 20px;
-  /* margin: 10px 10px; */
   background-color: #B5DDFF;
 }
 
-main .intro .col .row .right{
-  justify-self: center;
+main .intro .col:not(:first-child) {
+  text-align: center;
+}
+
+main .intro .col .row .right {
+  display: flex;
+  justify-content: center;
 }
 
 main .intro .row h3 {
@@ -105,6 +124,63 @@ main .intro .row p {
   color: rgb(115, 115, 115);
   font-weight: 600;
   padding: 15px 0px;
+}
+
+/* PLANNING */
+
+main .planning {
+  background-color: var(--secondary-color);
+}
+
+main .planning .row .col img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+main .planning .row .col {
+  color: white;
+}
+
+main .planning .row .col h2 {
+  padding: 30px 0px;
+}
+
+main .planning .row .col p {
+  margin-bottom: 30px;
+
+}
+
+main .planning .row .col .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 50px;
+  color: #000;
+}
+
+main .planning .row .col .card p {
+  font-style: italic;
+}
+
+main .planning .row .col .card h3 {
+  padding: 20px 0px;
+}
+
+main .planning .row .col .card .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  min-height: 40px;
+  border-radius: 50px;
+  background-color: var(--secondary-color);
+}
+
+.benefits .row{
+  flex-wrap: wrap;
 }
 
 
@@ -156,9 +232,13 @@ main .intro .row p {
         display: none;
     }
 
+
+    /* INTRO */
+
     .intro .col{
         width: calc(100% / 3);
     }
+    
     
     .intro .col:first-child{
         width: 66.6666%;
@@ -167,6 +247,17 @@ main .intro .row p {
     main .intro .col .row .left,
     main .intro .col .row .right {
       text-align: start;
+    }
+
+    main .intro .col .row .right {
+      display: flex;
+      justify-content: start;
+    }
+
+    /* PLANNING */
+
+    main .planning .row .col .card {
+      flex-direction: column;
     }
 
 
@@ -195,6 +286,29 @@ main .intro .row p {
     .intro .col:first-child .row{
         flex-direction: row;
     }
+
+    main .intro .col .row .left,
+    main .intro .col .row .right {
+      text-align: start;
+      width: 50%;
+    }
+
+    main .intro .col .row .right {
+      display: flex;
+      justify-content: center;
+    }
+
+    /* PLANNING */
+
+    main .planning .row .col img {
+      width: 90%;
+    }
+
+    main .planning .container {
+      padding: 0px 150px;
+    }
+
+
     .benefits .col{
         width: calc(100% / 3);
     }
