@@ -420,7 +420,7 @@ footer .container a {
 
 @media screen and (min-width:768px) {
 
-    header .row .menu{
+    header .row .menu {
         display: flex;
         align-items: center;
         justify-content: end;
