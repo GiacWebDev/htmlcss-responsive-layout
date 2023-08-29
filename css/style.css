@@ -16,8 +16,8 @@ body {
 
 .container{
   width: 90%;
-    max-width: 1140px;
-    margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .row{
@@ -25,11 +25,15 @@ body {
 }
 
 .col{
-    width: 100%;
+  width: 100%;
 }
 
 .b-radius {
   border-radius: 20px;
+}
+
+.d-flex {
+  display: flex;
 }
 
 h2 {
@@ -101,13 +105,27 @@ header .row .col .hamburger i {
     flex-direction: column;
 }
 
+/* INTRO */
+
 main .intro .col {
-  padding: 10px 20px 0px 20px;
+  margin: 10px;
   background-color: #B5DDFF;
 }
 
 main .intro .col:not(:first-child) {
   text-align: center;
+  padding: 20px 20px 0px 20px;
+}
+
+
+main .intro .col:first-child {
+  padding: 20px 20px 0 20px;
+  align-items: end;
+}
+
+main .intro .container .row {
+  display: flex;
+  justify-content: space-between;
 }
 
 main .intro .col .row .right {
@@ -117,22 +135,29 @@ main .intro .col .row .right {
 
 main .intro .row h3 {
   color: var(--primary-color);
-  padding: 15px 0px;
-  font-size: 1.3rem;
+  padding: 5px 0px;
+  font-size: 1.6rem;
 }
 
 main .intro .row i {
   font-size: 4rem;
 }
 
+main .intro .row .col .right {
+  height: 100%;
+  align-items: end;
+}
+
 main .intro .row img {
-  width: 200px
+  width: 200px;
 }
 
 main .intro .row p {
   color: rgb(115, 115, 115);
   font-weight: 600;
-  padding: 15px 0px;
+  padding: 5px 0px;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
 }
 
 /* PLANNING */
@@ -272,6 +297,7 @@ main .testimonials h4 {
   border-radius: 20px;
   padding: 20px;
   background-color: white;
+  margin: 10px;
 }
 
 .benefits .row .col h4 {
@@ -421,12 +447,12 @@ footer .container a {
 @media screen and (min-width:768px) {
 
     header .row .menu {
-        display: flex;
-        align-items: center;
-        justify-content: end;
-        list-style: none;
-        text-decoration: none;
-        margin-right: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      list-style: none;
+      text-decoration: none;
+      margin-right: 20px;
     }
 
     header .row .col .cta {
@@ -467,13 +493,13 @@ footer .container a {
 
     /* INTRO */
 
-    .intro .col{
-        width: calc(100% / 3);
+    .intro .col {
+        width: calc(100% / 3 - 30px);
     }
     
     
     .intro .col:first-child{
-        width: 66.6666%;
+        width: calc(66.6666% - 10px);
     }
 
     main .intro .col .row .left,
@@ -484,9 +510,11 @@ footer .container a {
     main .intro .col .row .right {
       display: flex;
       justify-content: start;
-      margin-left: 70px;
     }
 
+    main .intro .col .row .right img {
+      width: 250px;
+    }
     /* PLANNING */
 
     main .planning .row .col .card {
@@ -518,9 +546,9 @@ footer .container a {
     /* BENEFITS */
 
     .benefits .col{
-        width: 50%;
+        /* width: 50%; */
+        width: calc(50% - 20px)
     }
-
 
     /* ABOUT US */
 
@@ -563,8 +591,13 @@ footer .container a {
     }
 
 
+    .benefits .row {
+      justify-content: space-between;
+    }
+
     .benefits .col{
-        width: calc(100% / 3);
+        width: calc(100% / 3 - 20px);
+        justify-content: space-between;
     }
 
 }
